@@ -12,10 +12,21 @@ code {
     monospace;
 }
 .header__logo-img{
-  width: 208px;
+  min-width: 208px;
   background: url('./image/svg/logo.svg') no-repeat;
 }
 .header__vector-ico{
   padding-right: 19px;
   background: transparent url('./image/svg/Vector.svg') no-repeat right 20%;
+}
+
+.menu__dashboard-ico{
+  padding-left: 24px;
+  margin: 9px 16px 9px;
+  background: transparent url("./image/svg/menu/Dashbaord-ico.svg") no-repeat left center;
+}
+.menu__static-ico{
+  padding-left: 24px;
+  margin: 9px 16px 9px;
+  background: transparent url("./image/svg/menu/Statics-icon.svg") no-repeat left center;
 }
