@@ -1,9 +1,21 @@
-
+@import '~antd/dist/antd.css';
 body {
-  font-family: 'Roboto';
+  font-family: "Roboto";
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.header__logo-img{
+  width: 208px;
+  background: url('./image/svg/logo.svg') no-repeat;
+}
+.header__vector-ico{
+  padding-right: 19px;
+  background: transparent url('./image/svg/Vector.svg') no-repeat right 20%;
 }
