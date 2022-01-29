@@ -1,6 +1,7 @@
 import { css } from '@emotion/css'
 import React from 'react'
-import { DataPicker } from './utils/DataPicker'
+import { DataPicker } from '../components/utils/DataPicker'
+import { Static } from '../components/utils/Static'
 
 export const Statistics = () => {
   return (
@@ -26,6 +27,9 @@ export const Statistics = () => {
         </div>
         <div>
           <DataPicker />
+        </div>
+        <div>
+          <Static />
         </div>
       </div>
     </div>

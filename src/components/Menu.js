@@ -1,7 +1,7 @@
 import { css } from '@emotion/css'
 import React, { useState } from 'react'
-import { Dashbaord } from './Dashbaord'
-import { Statistics } from './Statistics'
+import { Dashbaord } from '../page/Dashbaord'
+import { Statistics } from '../page/Statistics'
 
 export const Menu = () => {
   const [isPosition, setISPOSITION] = useState(false)
@@ -15,9 +15,10 @@ export const Menu = () => {
     >
       <div
         className={css`
+          background-color: #fff;
           width: 208px;
           min-height: 100%;
-          margin-top: 30px;
+          padding-top: 30px;
           padding-bottom: 100%;
         `}
       >
