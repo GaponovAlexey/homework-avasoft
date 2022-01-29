@@ -1,7 +1,10 @@
+import { css, cx } from '@emotion/css'
 
 function App() {
   return (
-    <div >
+    <div  className={css`
+    
+    `} >
      start
     </div>
   );
