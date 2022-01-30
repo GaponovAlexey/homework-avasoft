@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './reset.css';
-import './index.css';
-import './fonts/font.css'
 import App from './App';
+
+import './reset.css';
+
+
+import './fonts/font.css'
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>

@@ -16,6 +16,9 @@ const options = {
     spacingLeft: 10,
     spacingRight: true,
     spacingBottom: 2,
+    height: 304,
+    width: 470,
+    borderRadius: 10,
   },
   title: {
     text: 'BarChart',
@@ -24,7 +27,7 @@ const options = {
     {
       name: 'Russia',
       color: '#2100EE',
-      data: [100],
+      data: [99],
     },
     {
       name: 'Spain',
@@ -45,7 +48,7 @@ const options = {
 }
 export const BarChart = () => {
   return (
-    <div
+    <table
       className={css`
         border-radius: 10px;
       `}
@@ -57,6 +60,6 @@ export const BarChart = () => {
         highcharts={Highcharts}
         options={options}
       />
-    </div>
+    </table>
   )
 }

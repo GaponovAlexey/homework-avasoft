@@ -41,17 +41,20 @@ console.log('rap');
             display: flex;
           `}
         >
-          <span
+          <div
             className={css`
               display: grid;
               grid-template-columns: repeat(2, 1fr);
               grid-column-gap: 20px;
+              grid-row-gap: 20px;
+              margin-bottom: 20px;
+              margin-right: 20px;
             `}
           >
             {dataStatic.map((el) => (
               <Static key={el.id} {...el} />
             ))}
-          </span>
+          </div>
           <span>
             <BarChart />
           </span>

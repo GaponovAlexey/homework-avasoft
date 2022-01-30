@@ -9,7 +9,7 @@ export const Statistics = () => {
     <div>
       <div
         className={css`
-          background-color: #f9f9ff;
+          // background-color: #f9f9ff;
           padding-left: 14.5rem;
         `}
       >
@@ -29,7 +29,9 @@ export const Statistics = () => {
         <div>
           <DataPicker />
         </div>
-        <div>
+        <div className={css`
+        margin-bottom: 20px;
+        `} >
           <Static />
         </div>
         <div>

@@ -116,7 +116,13 @@ const columns = [
       const raz = payload.value - payload.PrevValue
       const endValue = (raz / payload.PrevValue) * 100
       return (
-        <div className={css`color: ${endValue > 0 ? 'green' : 'red'}`}>{endValue.toFixed(1)}%</div>
+        <div
+          className={css`
+            color: ${endValue > 0 ? 'green' : 'red'};
+          `}
+        >
+          {endValue.toFixed(1)}%
+        </div>
       )
     },
     width: 150,
@@ -125,8 +131,8 @@ const columns = [
 
 export const TableChart = () => {
   return (
-    <div>
+    <table>
       <Table columns={columns} dataSource={data} pagination={{ pageSize: 5 }} />
-    </div>
+    </table>
   )
 }

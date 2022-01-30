@@ -3,14 +3,18 @@ import Highcharts from 'highcharts/highstock'
 import HighchartsReact from 'highcharts-react-official'
 
 const options = {
-  // credits: {
-  //   enabled: false,
-  // },
-  // exporting: {
-  //   enabled: false,
-  // },
+  credits: {
+    enabled: false,
+  },
+  exporting: {
+    enabled: false,
+  },
+
   chart: {
-    backgroundColor: "none",
+    // backgroundColor: "none",
+    width: 1024,
+    height: 434,
+    borderRadius: 10,
   },
   title: {
     text: 'LinearChart',
@@ -36,12 +40,12 @@ const options = {
 
 export const LinearChart = () => {
   return (
-    <div>
+    <table>
       <HighchartsReact
         highcharts={Highcharts}
         constructorType={'stockChart'}
         options={options}
       />
-    </div>
+    </table>
   )
 }

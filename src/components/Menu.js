@@ -11,11 +11,11 @@ export const Menu = () => {
       className={css`
         display: flex;
         flex-wrap: wrap;
-      `}
-    >
+        `}
+        >
       <div
         className={css`
-          background-color: #fff;
+        background-color: #fff;
           min-width: 13rem;
           padding-top: 2rem;
           padding-bottom: 50rem;
