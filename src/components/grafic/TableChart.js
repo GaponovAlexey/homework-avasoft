@@ -1,94 +1,8 @@
 import { css } from '@emotion/css'
-import { Tag, Table } from 'antd'
+import { Table } from 'antd'
 import 'antd/dist/antd.css'
 import React from 'react'
-
-const data = [
-  {
-    id: '1',
-    name: 'Row1',
-    value: 22000,
-    PrevValue: 10000,
-  },
-  {
-    id: '2',
-    name: 'Row 2',
-    value: 20567,
-    PrevValue: 30555,
-  },
-  {
-    id: '3',
-    name: 'row 3',
-    value: 20567,
-    PrevValue: 10555,
-  },
-  {
-    id: '3',
-    name: 'row 3',
-    value: 20567,
-    PrevValue: 10555,
-  },
-  {
-    id: '3',
-    name: 'row 3',
-    value: 20567,
-    PrevValue: 10555,
-  },
-  {
-    id: '3',
-    name: 'row 3',
-    value: 20567,
-    PrevValue: 10555,
-  },
-  {
-    id: '3',
-    name: 'row 3',
-    value: 22000,
-    PrevValue: 10000,
-  },
-  {
-    id: '3',
-    name: 'row 3',
-    value: 22000,
-    PrevValue: 10000,
-  },
-  {
-    id: '3',
-    name: 'row 3',
-    value: 22000,
-    PrevValue: 10000,
-  },
-  {
-    id: '3',
-    name: 'row 3',
-    value: 20567,
-    PrevValue: 10555,
-  },
-  {
-    id: '3',
-    name: 'row 3',
-    value: 20567,
-    PrevValue: 10555,
-  },
-  {
-    id: '3',
-    name: 'row 3',
-    value: 20567,
-    PrevValue: 10555,
-  },
-  {
-    id: '3',
-    name: 'row 3',
-    value: 20567,
-    PrevValue: 10555,
-  },
-  {
-    id: '3',
-    name: 'row 3',
-    value: 20567,
-    PrevValue: 10555,
-  },
-]
+import { useSelector } from 'react-redux'
 
 const columns = [
   {
@@ -130,9 +44,14 @@ const columns = [
 ]
 
 export const TableChart = () => {
+  const {tableChartData} = useSelector((state) => state.red)
   return (
     <table>
-      <Table columns={columns} dataSource={data} pagination={{ pageSize: 5 }} />
+      <Table
+        columns={columns}
+        dataSource={tableChartData}
+        pagination={{ pageSize: 5 }}
+      />
     </table>
   )
 }
