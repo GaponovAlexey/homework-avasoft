@@ -1,9 +1,11 @@
 import { css } from '@emotion/css'
 import React from 'react'
 
+
+const icotop = <span>&#9650;</span>
+const icodown = <span>&#9660;</span>
+
 export const Static = ({title}) => {
-  const icotop = <span>&#9650;</span>
-  const icodown = <span>&#9660;</span>
   return (
     <div>
       <div

@@ -1,11 +1,14 @@
-import React from 'react';
-import { DatePicker, Space } from 'antd';
+import React from 'react'
+import { DatePicker, Space } from 'antd'
 
-const { RangePicker } = DatePicker;
+const { RangePicker } = DatePicker
+
 export const DataPicker = () => {
-  return <div style={{marginBottom: 16}}>
-    <Space direction="vertical" size={1}>
-    <RangePicker />
-  </Space>
-  </div>;
-};
+  return (
+    <div style={{ marginBottom: 16 }}>
+      <Space direction='vertical' size={1}>
+        <RangePicker />
+      </Space>
+    </div>
+  )
+}

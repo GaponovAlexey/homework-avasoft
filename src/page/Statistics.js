@@ -9,7 +9,7 @@ export const Statistics = () => {
       <div
         className={css`
           background-color: #f9f9ff;
-          padding-left: 24px;
+          padding-left: 14.5rem;
         `}
       >
         <div>
@@ -31,6 +31,7 @@ export const Statistics = () => {
         <div>
           <Static />
         </div>
+        
       </div>
     </div>
   )

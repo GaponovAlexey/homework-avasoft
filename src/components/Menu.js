@@ -16,10 +16,10 @@ export const Menu = () => {
       <div
         className={css`
           background-color: #fff;
-          width: 208px;
-          min-height: 100%;
-          padding-top: 30px;
-          padding-bottom: 100%;
+          min-width: 13rem;
+          padding-top: 2rem;
+          padding-bottom: 50rem;
+          position: absolute;
         `}
       >
         <div
