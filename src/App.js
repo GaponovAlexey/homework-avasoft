@@ -1,11 +1,13 @@
-import { Main } from './components/Main';
+import { Header } from './components/Header'
+import { Menu } from './components/Menu'
 
 function App() {
   return (
-    <div >
-     <Main />
+    <div>
+      <Header />
+      <Menu />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,5 +1,6 @@
 import { css } from '@emotion/css'
 import React from 'react'
+import { TableChart } from '../components/grafic/TableChart'
 import { DataPicker } from '../components/utils/DataPicker'
 import { Static } from '../components/utils/Static'
 
@@ -31,7 +32,9 @@ export const Statistics = () => {
         <div>
           <Static />
         </div>
-        
+        <div>
+          <TableChart />
+        </div>
       </div>
     </div>
   )

@@ -3,12 +3,12 @@ import Highcharts from 'highcharts/highstock'
 import HighchartsReact from 'highcharts-react-official'
 
 const options = {
-  credits: {
-    enabled: false,
-  },
-  exporting: {
-    enabled: false,
-  },
+  // credits: {
+  //   enabled: false,
+  // },
+  // exporting: {
+  //   enabled: false,
+  // },
   chart: {
     backgroundColor: "none",
   },

@@ -46,9 +46,6 @@ console.log('rap');
               display: grid;
               grid-template-columns: repeat(2, 1fr);
               grid-column-gap: 20px;
-              grid-row-gap: 20px;
-              margin-bottom: 20px;
-              margin-right: 20px;
             `}
           >
             {dataStatic.map((el) => (

@@ -12,7 +12,7 @@ const options = {
   },
   chart: {
     type: 'bar',
-    backgroundColor: "none",
+    // backgroundColor: "none",
     spacingLeft: 10,
     spacingRight: true,
     spacingBottom: 2,
