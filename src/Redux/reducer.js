@@ -178,9 +178,35 @@ const initialState = {
     usa: randomInteger(1, 99),
     itali: randomInteger(1, 99),
   },
+  StaticCardData: [
+    {
+      id: '1',
+      title: 'Water',
+      value: randomInteger(1000, 9900),
+      PrevValue: randomInteger(1000, 9900),
+    },
+    {
+      id: '2',
+      title: 'Fire',
+      value: randomInteger(1000, 9900),
+      PrevValue: randomInteger(1000, 9900),
+    },
+    {
+      id: '3',
+      title: 'Wind',
+      value: randomInteger(1000, 9900),
+      PrevValue: randomInteger(1000, 9900),
+    },
+    {
+      id: '4',
+      title: 'Forest',
+      value: randomInteger(1000, 9900),
+      PrevValue: randomInteger(1000, 9900),
+    },
+  ],
 }
 
-export const myReducerSlice = createSlice({
+const myReducerSlice = createSlice({
   name: 'red',
   initialState,
   reducers: {},

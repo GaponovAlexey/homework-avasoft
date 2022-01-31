@@ -4,6 +4,9 @@ import 'antd/dist/antd.css'
 import React from 'react'
 import { useSelector } from 'react-redux'
 
+const icotop = <span>&#9650;</span>
+const icodown = <span>&#9660;</span>
+
 const columns = [
   {
     title: 'Name',
@@ -28,14 +31,14 @@ const columns = [
     key: 'value',
     render: (payload) => {
       const raz = payload.value - payload.PrevValue
-      const endValue = (raz / payload.PrevValue) * 100
+      const endValue = ((raz / payload.PrevValue) * 100).toFixed(1)
       return (
         <div
           className={css`
             color: ${endValue > 0 ? 'green' : 'red'};
           `}
         >
-          {endValue.toFixed(1)}%
+          {endValue >= 0 ? endValue : endValue}%
         </div>
       )
     },
@@ -44,7 +47,7 @@ const columns = [
 ]
 
 export const TableChart = () => {
-  const {tableChartData} = useSelector((state) => state.red)
+  const { tableChartData } = useSelector((state) => state.red)
   return (
     <table>
       <Table

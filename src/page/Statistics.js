@@ -4,7 +4,8 @@ import { TableChart } from '../components/grafic/TableChart'
 import { DataPicker } from '../components/utils/DataPicker'
 import { StaticCard } from '../components/utils/StaticCard'
 
-export const Statistics = () => {
+export const Statistics = ({ dataStatic }) => {
+  const water = dataStatic.find((el) => el.title === 'Water')
   return (
     <div>
       <div
@@ -29,10 +30,12 @@ export const Statistics = () => {
         <div>
           <DataPicker />
         </div>
-        <div className={css`
-        margin-bottom: 20px;
-        `} >
-          <StaticCard />
+        <div
+          className={css`
+            margin-bottom: 20px;
+          `}
+        >
+          <StaticCard {...water} />
         </div>
         <div>
           <TableChart />

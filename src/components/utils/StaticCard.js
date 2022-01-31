@@ -1,10 +1,16 @@
 import { css } from '@emotion/css'
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 const icotop = <span>&#9650;</span>
 const icodown = <span>&#9660;</span>
 
-export const StaticCard = ({ title }) => {
+export const StaticCard = ({ title, value, PrevValue }) => {
+  const { StaticCardData } = useSelector((state) => state.red)
+
+  const raz = value - PrevValue 
+  const endValue = (raz / PrevValue) * 100
+
   return (
     <div
       className={css`
@@ -29,7 +35,7 @@ export const StaticCard = ({ title }) => {
           className={css`
             position: relative;
             padding-top: 21px;
-            padding-left: 24px;
+            padding-left: 27px;
             font-size: 14px;
             line-height: 22px;
           `}
@@ -43,6 +49,7 @@ export const StaticCard = ({ title }) => {
           display: flex;
           flex-wrap: wrap;
           align-items: center;
+          position: relative;
         `}
       >
         <div
@@ -54,16 +61,24 @@ export const StaticCard = ({ title }) => {
             padding-top: 7px;
           `}
         >
-          20567{' '}
+          {value}
           <span
             className={css`
               position: relative;
               bottom: 5px;
               font-size: 50%;
               color: green;
+              margin-left: 15px;
             `}
           >
-            {icotop}70.5%
+            {icotop}
+            <span
+              className={css`
+                margin-left: 5px;
+              `}
+            >
+              {endValue.toFixed(1)}%
+            </span>
           </span>
         </div>
         <div
@@ -76,11 +91,11 @@ export const StaticCard = ({ title }) => {
         />
         <div
           className={css`
-            padding-left: 28px;
+            margin-left: 33px;
             color: #8c8c8c;
           `}
         >
-          12434
+          {PrevValue}
         </div>
       </div>
     </div>

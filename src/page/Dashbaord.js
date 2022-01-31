@@ -5,14 +5,8 @@ import { LinearChart } from '../components/grafic/LinearChart'
 import { DataPicker } from '../components/utils/DataPicker'
 import { StaticCard } from '../components/utils/StaticCard'
 
-export const Dashbaord = () => {
-  const dataStatic = [
-    { id: '1', title: 'Water' },
-    { id: '2', title: 'Fire' },
-    { id: '3', title: 'Wind' },
-    { id: '4', title: 'Forest' },
-  ]
-console.log('rap');
+export const Dashbaord = ({dataStatic}) => {
+  
   return (
     <div>
       <div
@@ -52,7 +46,7 @@ console.log('rap');
             `}
           >
             {dataStatic.map((el) => (
-              <StaticCard key={el.id} {...el} />
+              <StaticCard key={el.value} {...el} />
             ))}
           </div>
           <span>
