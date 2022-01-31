@@ -9,16 +9,16 @@ export const MoneyBar = () => {
   const dispatch = useDispatch()
 
   return (
-    <div onClick={() => dispatch(ChangeMoney())}>
+    <div>
       <Select
         defaultValue='USD'
-        style={{ width: 90, paddingLeft: 20, top: -5 }}
+        style={{ width: 89, paddingLeft: 20, top: -5 }}
       >
         <Option value='USD'>
-          <span onClick={() => dispatch(ChangeMoney())}>USD</span>
+          <span onClick={() => dispatch(ChangeMoney(false))}>USD</span>
         </Option>
         <Option value='EUR'>
-          <span onClick={() => dispatch(ChangeMoney())}>EUR</span>
+          <span onClick={() => dispatch(ChangeMoney(true))}>EUR</span>
         </Option>
       </Select>
     </div>

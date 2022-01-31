@@ -12,7 +12,9 @@ export const DataPicker = () => {
         border-radius: 22px;
       `}
     >
-      <Space direction='vertical' size={1}></Space>
+      <Space direction='vertical' size={1}>
+        <RangePicker />
+      </Space>
     </div>
   )
 }

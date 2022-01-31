@@ -211,8 +211,8 @@ const myReducerSlice = createSlice({
   name: 'red',
   initialState,
   reducers: {
-    ChangeMoney: (state) => {
-      state.Money = !state.Money
+    ChangeMoney: (state, action) => {
+      state.Money = action.payload
     },
   },
 })
