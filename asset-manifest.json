@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/homework-avasoft/static/css/main.d91bce14.css",
+    "main.js": "/homework-avasoft/static/js/main.fd9cecd8.js",
+    "static/media/roboto-v29-latin-500.woff": "/homework-avasoft/static/media/roboto-v29-latin-500.ddd11dabeca881d49f59.woff",
+    "static/media/roboto-v29-latin-700.woff": "/homework-avasoft/static/media/roboto-v29-latin-700.0344cc3c5cd0959f5f92.woff",
+    "static/media/roboto-v29-latin-regular.woff": "/homework-avasoft/static/media/roboto-v29-latin-regular.9b78ea3bc4f00e508f01.woff",
+    "static/media/roboto-v29-latin-500.woff2": "/homework-avasoft/static/media/roboto-v29-latin-500.869888415d0b1a99ae5c.woff2",
+    "static/media/roboto-v29-latin-700.woff2": "/homework-avasoft/static/media/roboto-v29-latin-700.0682ca7f74351d42bf73.woff2",
+    "static/media/roboto-v29-latin-regular.woff2": "/homework-avasoft/static/media/roboto-v29-latin-regular.4673b4537a84c7f7a130.woff2",
+    "static/media/Dashbaord-ico.svg": "/homework-avasoft/static/media/Dashbaord-ico.4c0b1db3468a9c4bce8a.svg",
+    "static/media/logo.svg": "/homework-avasoft/static/media/logo.e196587813fa391af93b.svg",
+    "static/media/Statics-icon.svg": "/homework-avasoft/static/media/Statics-icon.434f624adc6b18d62fbc.svg",
+    "index.html": "/homework-avasoft/index.html",
+    "static/media/static-ico.svg": "/homework-avasoft/static/media/static-ico.a95a2a152fe9633daf52.svg",
+    "static/media/Vector.svg": "/homework-avasoft/static/media/Vector.a102d32c1502bbcbf201.svg",
+    "main.d91bce14.css.map": "/homework-avasoft/static/css/main.d91bce14.css.map",
+    "main.fd9cecd8.js.map": "/homework-avasoft/static/js/main.fd9cecd8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d91bce14.css",
+    "static/js/main.fd9cecd8.js"
+  ]
+}
