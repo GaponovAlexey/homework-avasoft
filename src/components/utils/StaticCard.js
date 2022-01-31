@@ -8,7 +8,7 @@ const icodown = <span>&#9660;</span>
 export const StaticCard = ({ title, value, PrevValue }) => {
   const { StaticCardData } = useSelector((state) => state.red)
 
-  const raz = value - PrevValue 
+  const raz = value - PrevValue
   const endValue = (raz / PrevValue) * 100
 
   return (
@@ -67,11 +67,11 @@ export const StaticCard = ({ title, value, PrevValue }) => {
               position: relative;
               bottom: 5px;
               font-size: 50%;
-              color: green;
               margin-left: 15px;
+              ${endValue > 0 ? 'color: green;' : 'color: red;'}
             `}
           >
-            {icotop}
+            {endValue > 0 ? icotop : icodown}
             <span
               className={css`
                 margin-left: 5px;

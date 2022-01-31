@@ -6,7 +6,6 @@ import { DataPicker } from '../components/utils/DataPicker'
 import { StaticCard } from '../components/utils/StaticCard'
 
 export const Dashbaord = ({dataStatic}) => {
-  console.log('dasboar');
   return (
     <div>
       <div

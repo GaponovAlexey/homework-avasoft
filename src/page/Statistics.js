@@ -6,7 +6,6 @@ import { StaticCard } from '../components/utils/StaticCard'
 
 export const Statistics = ({ dataStatic }) => {
   const water = dataStatic.find((el) => el.title === 'Water')
-  console.log('static');
   return (
     <div>
       <div

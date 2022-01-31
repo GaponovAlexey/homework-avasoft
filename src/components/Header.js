@@ -1,9 +1,8 @@
-import React from 'react'
-import { css } from '@emotion/css'
-import { MoneyBar } from './utils/MoneyBar'
-import { Select } from 'antd'
-import { Avatar, Badge } from 'antd'
 import { UserOutlined } from '@ant-design/icons'
+import { css } from '@emotion/css'
+import { Avatar, Badge } from 'antd'
+import React from 'react'
+import { MoneyBar } from './utils/MoneyBar'
 
 
 export const Header = () => {
