@@ -5,7 +5,7 @@ import { css } from '@emotion/css'
 import { useSelector } from 'react-redux'
 
 export const BarChart = () => {
-  const barData  = useSelector((state) => state.red.barData)
+  const barData = useSelector((state) => state.red.barData)
   const options = {
     credits: {
       enabled: false,
@@ -51,18 +51,20 @@ export const BarChart = () => {
   }
 
   return (
-    <table
-      className={css`
-        border-radius: 10px;
-      `}
-    >
-      <HighchartsReact
+    <div>
+      <table
         className={css`
           border-radius: 10px;
         `}
-        highcharts={Highcharts}
-        options={options}
-      />
-    </table>
+      >
+        <HighchartsReact
+          className={css`
+            border-radius: 10px;
+          `}
+          highcharts={Highcharts}
+          options={options}
+        />
+      </table>
+    </div>
   )
 }

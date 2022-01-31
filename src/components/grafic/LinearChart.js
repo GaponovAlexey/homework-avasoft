@@ -4,8 +4,9 @@ import HighchartsReact from 'highcharts-react-official'
 import { useSelector } from 'react-redux'
 
 export const LinearChart = () => {
-  
-  const {randomSeriesA, randomSeriesB, randomSeriesC} = useSelector((state) => state.red)
+  const { randomSeriesA, randomSeriesB, randomSeriesC } = useSelector(
+    (state) => state.red
+  )
   const options = {
     credits: {
       enabled: false,
@@ -27,28 +28,30 @@ export const LinearChart = () => {
       {
         name: 'line A',
         color: 'red',
-        data: randomSeriesA.map(el => el.data),
+        data: randomSeriesA.map((el) => el.data),
       },
       {
         name: 'line B',
         color: 'green',
-        data: randomSeriesB.map(el => el.data),
+        data: randomSeriesB.map((el) => el.data),
       },
       {
         name: 'line C',
         color: 'blue',
-        data: randomSeriesC.map(el => el.data),
+        data: randomSeriesC.map((el) => el.data),
       },
     ],
   }
 
   return (
-    <table>
-      <HighchartsReact
-        highcharts={Highcharts}
-        constructorType={'stockChart'}
-        options={options}
-      />
-    </table>
+    <div>
+      <table>
+        <HighchartsReact
+          highcharts={Highcharts}
+          constructorType={'stockChart'}
+          options={options}
+        />
+      </table>
+    </div>
   )
 }

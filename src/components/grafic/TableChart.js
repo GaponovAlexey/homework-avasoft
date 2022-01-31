@@ -9,7 +9,7 @@ export const TableChart = () => {
 
   const icotop = <span>&#9650;</span>
   const icodown = <span>&#9660;</span>
-  
+
   const dolOrEuro = !Money ? '$' : '€'
 
   const columns = [
@@ -57,14 +57,14 @@ export const TableChart = () => {
   ]
 
   return (
-    <table
-      
-    >
-      <Table
-        columns={columns}
-        dataSource={tableChartData}
-        pagination={{ pageSize: 5 }}
-      />
-    </table>
+    <div>
+      <table>
+        <Table
+          columns={columns}
+          dataSource={tableChartData}
+          pagination={{ pageSize: 5 }}
+        />
+      </table>
+    </div>
   )
 }
