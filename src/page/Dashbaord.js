@@ -3,7 +3,7 @@ import React from 'react'
 import { BarChart } from '../components/grafic/BarChart'
 import { LinearChart } from '../components/grafic/LinearChart'
 import { DataPicker } from '../components/utils/DataPicker'
-import { Static } from '../components/utils/Static'
+import { StaticCard } from '../components/utils/StaticCard'
 
 export const Dashbaord = () => {
   const dataStatic = [
@@ -52,7 +52,7 @@ console.log('rap');
             `}
           >
             {dataStatic.map((el) => (
-              <Static key={el.id} {...el} />
+              <StaticCard key={el.id} {...el} />
             ))}
           </div>
           <span>

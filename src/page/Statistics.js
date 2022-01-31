@@ -2,7 +2,7 @@ import { css } from '@emotion/css'
 import React from 'react'
 import { TableChart } from '../components/grafic/TableChart'
 import { DataPicker } from '../components/utils/DataPicker'
-import { Static } from '../components/utils/Static'
+import { StaticCard } from '../components/utils/StaticCard'
 
 export const Statistics = () => {
   return (
@@ -32,7 +32,7 @@ export const Statistics = () => {
         <div className={css`
         margin-bottom: 20px;
         `} >
-          <Static />
+          <StaticCard />
         </div>
         <div>
           <TableChart />

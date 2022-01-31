@@ -4,7 +4,7 @@ import React from 'react'
 const icotop = <span>&#9650;</span>
 const icodown = <span>&#9660;</span>
 
-export const Static = ({ title }) => {
+export const StaticCard = ({ title }) => {
   return (
     <div
       className={css`

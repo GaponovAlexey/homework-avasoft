@@ -2,51 +2,54 @@ import React from 'react'
 import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
 import { css } from '@emotion/css'
+import { useSelector } from 'react-redux'
 
-const options = {
-  credits: {
-    enabled: false,
-  },
-  exporting: {
-    enabled: false,
-  },
-  chart: {
-    type: 'bar',
-    // backgroundColor: "none",
-    spacingLeft: 10,
-    spacingRight: true,
-    spacingBottom: 2,
-    height: 304,
-    width: 470,
-    borderRadius: 10,
-  },
-  title: {
-    text: 'BarChart',
-  },
-  series: [
-    {
-      name: 'Russia',
-      color: '#2100EE',
-      data: [99],
-    },
-    {
-      name: 'Spain',
-      color: '#6900EE',
-      data: [75],
-    },
-    {
-      name: 'USA',
-      color: '#EE0056',
-      data: [65],
-    },
-    {
-      name: 'Italy',
-      color: '#EE9D00',
-      data: [60],
-    },
-  ],
-}
 export const BarChart = () => {
+  const barData  = useSelector((state) => state.red.barData)
+  const options = {
+    credits: {
+      enabled: false,
+    },
+    exporting: {
+      enabled: false,
+    },
+    chart: {
+      type: 'bar',
+      // backgroundColor: "none",
+      spacingLeft: 10,
+      spacingRight: true,
+      spacingBottom: 2,
+      height: 304,
+      width: 470,
+      borderRadius: 10,
+    },
+    title: {
+      text: 'BarChart',
+    },
+    series: [
+      {
+        name: 'Russia',
+        color: '#2100EE',
+        data: [barData.rus],
+      },
+      {
+        name: 'Spain',
+        color: '#6900EE',
+        data: [barData.spain],
+      },
+      {
+        name: 'USA',
+        color: '#EE0056',
+        data: [barData.usa],
+      },
+      {
+        name: 'Italy',
+        color: '#EE9D00',
+        data: [barData.itali],
+      },
+    ],
+  }
+
   return (
     <table
       className={css`
