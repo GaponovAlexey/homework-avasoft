@@ -47,7 +47,8 @@ const columns = [
 ]
 
 export const TableChart = () => {
-  const { tableChartData } = useSelector((state) => state.red)
+  const { tableChartData, Money } = useSelector((state) => state.red)
+  console.log(Money)
   return (
     <table>
       <Table

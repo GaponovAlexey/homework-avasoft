@@ -1,10 +1,10 @@
 import React from 'react'
 import { css } from '@emotion/css'
+import { MoneyBar } from './utils/MoneyBar'
 import { Select } from 'antd'
 import { Avatar, Badge } from 'antd'
 import { UserOutlined } from '@ant-design/icons'
 
-const { Option } = Select
 
 export const Header = () => {
   return (
@@ -36,13 +36,7 @@ export const Header = () => {
           >
             <div>Currency</div>
             <div>
-              <Select
-                defaultValue='USD'
-                style={{ width: 90, paddingLeft: 20, top: -5 }}
-              >
-                <Option value='USD'>USD</Option>
-                <Option value='EUR'>EUR</Option>
-              </Select>
+              <MoneyBar />
             </div>
           </div>
           <div>

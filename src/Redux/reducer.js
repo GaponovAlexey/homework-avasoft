@@ -2,6 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 import randomInteger from 'random-int'
 
 const initialState = {
+  Money: false,
   tableChartData: [
     {
       id: new Date().toString(),
@@ -209,9 +210,13 @@ const initialState = {
 const myReducerSlice = createSlice({
   name: 'red',
   initialState,
-  reducers: {},
+  reducers: {
+    ChangeMoney: (state) => {
+      state.Money = !state.Money
+    },
+  },
 })
 
-// export const {} = myReducerSlice.actions
+export const { ChangeMoney } = myReducerSlice.actions
 
 export default myReducerSlice.reducer
