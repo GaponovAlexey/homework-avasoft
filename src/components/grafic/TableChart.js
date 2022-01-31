@@ -9,6 +9,7 @@ export const TableChart = () => {
 
   const icotop = <span>&#9650;</span>
   const icodown = <span>&#9660;</span>
+  
   const dolOrEuro = !Money ? '$' : '€'
 
   const columns = [
